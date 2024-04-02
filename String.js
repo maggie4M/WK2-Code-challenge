@@ -5,13 +5,12 @@ function stringSwap(str) {
     for (let i = 0; i < str.length; i++) {
       //It reads each character and using the if function it converts the lowercase characters into uppercase while it also converts the uppercase characters into uppercase using  toUpperCase() and toLOwerCase
       let char = str.charAt(i);
-      if (char === char.toLowerCase()) {
-        string += char.toUpperCase();
-      } else {
+      if (char === char.toUpperCase()) {
         string += char.toLowerCase();
+      } else {
+        string += char.toUpperCase();
       }
     }
-    //It then joins the split characters back into a sting and returns it 
+    //It then joins the split characters back into a sting and returns it with the changes made 
     return string;
   }
-  console.log(stringSwap ("The Quick Brown Fox"));

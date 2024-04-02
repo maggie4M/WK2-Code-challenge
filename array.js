@@ -17,4 +17,3 @@ function generateArray(beginning, end) {
     //It then returns the outcome which are the values of the array of numbers
     return outcome;
   }
-  console.log(generateArray(4,7));
